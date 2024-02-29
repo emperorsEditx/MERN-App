@@ -30,17 +30,17 @@ export default function App() {
         <Header names={names} />
         <Routes>
           <Route
-            path="/"
+            path="./"
             element={
               <Hero nameHandler={nameHandler} name={name} setName={setName} />
             }
           />
           <Route
-            path="/books-list"
+            path="./books-list"
             element={<Books bookHandler={bookHandler} cartData={cartData} />}
           />
           <Route
-            path="/cart-page"
+            path="./cart-page"
             element={
               <Cpage
                 cartData={cartData}
