@@ -1,0 +1,11 @@
+.cart {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: var(--light);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}

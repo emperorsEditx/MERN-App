@@ -1,0 +1,36 @@
+.cpage {
+  width: 100%;
+  max-height: 75vh;
+  overflow-y: scroll;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+.cartItem {
+  width: 800px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+.btn {
+  margin: 20px;
+  border-radius: 2px;
+}
+@media screen and (max-width: 850px) {
+  .cartItem {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cartItem {
+    width: 100%;
+  }
+  .dps {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+}

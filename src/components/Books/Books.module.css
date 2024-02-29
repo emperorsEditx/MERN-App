@@ -1,0 +1,65 @@
+.booksList {
+  width: 100%;
+  max-height: 80vh;
+  list-style: none;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  top: 100px;
+  overflow-y: scroll;
+}
+.booksList li {
+  display: flex;
+  width: max-content;
+  margin: auto;
+  border-bottom: 1px solid var(--light);
+}
+.naming {
+  width: 500px;
+  text-align: left;
+}
+.naming p {
+  font-size: 16px;
+  line-height: 1.2;
+}
+.pricing {
+  display: flex;
+  justify-content: space-between;
+}
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+.data {
+  color: gray;
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+}
+.price {
+  font-family: cursive;
+}
+@media screen and (max-width: 650px) {
+  .naming {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .naming {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .booksList li {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  img {
+    width: 100%;
+    height: 200px;
+  }
+  .naming {
+    width: 100%;
+  }
+}

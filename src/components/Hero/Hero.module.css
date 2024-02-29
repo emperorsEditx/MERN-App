@@ -1,0 +1,27 @@
+.hero {
+  width: 100%;
+  text-align: center;
+  padding: 100px;
+}
+p {
+  font-size: 20px;
+  margin: 10px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+.heading {
+  font-size: 30px;
+  color: var(--dark);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    padding: 100px 10px;
+  }
+}
