@@ -30,17 +30,17 @@ export default function App() {
         <Header names={names} />
         <Routes>
           <Route
-            path="./"
+            path="/MERN-App/"
             element={
               <Hero nameHandler={nameHandler} name={name} setName={setName} />
             }
           />
           <Route
-            path="./books-list"
+            path="/MERN-App/books-list"
             element={<Books bookHandler={bookHandler} cartData={cartData} />}
           />
           <Route
-            path="./cart-page"
+            path="/MERN-App/cart-page"
             element={
               <Cpage
                 cartData={cartData}

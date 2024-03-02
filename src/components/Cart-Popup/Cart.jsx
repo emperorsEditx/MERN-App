@@ -8,7 +8,7 @@ export default function Cart({ cartData }) {
         <p>{cartData.length}</p>
       </div>
       <Link
-        to={"/cart-page"}
+        to={"/MERN-App/cart-page"}
         style={{ color: "var(--dark)", textDecoration: "none" }}
       >
         Open Cart &#8594;
