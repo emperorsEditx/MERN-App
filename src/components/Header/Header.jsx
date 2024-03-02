@@ -13,7 +13,6 @@ export default function Header({ names }) {
           <p style={{ color: "var(--dark)" }}>{names}</p>
         </div>
       )}
-      {names ? <Navigate to="/MERN-App/books-list" /> : null}
     </header>
   );
 }

@@ -3,17 +3,13 @@ import Books from "./components/Books/Books";
 import Cpage from "./components/Cart-Page/Cpage";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 export default function App() {
   const [cartData, setCartData] = useState([]);
   const [name, setName] = useState("");
   const [names, setNames] = useState("");
 
-  let nameHandler = (e) => {
-    e.preventDefault();
-    setNames(name);
-  };
   let bookHandler = (book) => {
     let data = [...cartData, book];
     setCartData(data);
@@ -32,7 +28,12 @@ export default function App() {
           <Route
             path="/MERN-App/"
             element={
-              <Hero nameHandler={nameHandler} name={name} setName={setName} />
+              <Hero
+                name={name}
+                setName={setName}
+                names={names}
+                setNames={setNames}
+              />
             }
           />
           <Route
